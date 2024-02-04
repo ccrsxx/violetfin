@@ -77,9 +77,11 @@
   display: none;
 }
 
-.skinHeader,
-.skinHeader.semiTransparent {
+.skinHeader {
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1rem);
+}
+.skinHeader.semiTransparent {
   backdrop-filter: blur(1rem) !important;
 }
 
