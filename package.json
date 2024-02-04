@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently npm:watch npm:serve",
+    "serve": "serve .",
     "build": "sass src/styles/index.scss:public/style.css",
-    "build:commit": "npm run build && git add public/*",
     "watch": "sass --watch src/styles/index.scss:public/style.css",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:commit": "npm run build && git add public/*"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
@@ -16,9 +18,11 @@
   "author": "ccrsxx",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "husky": "^9.0.10",
     "lint-staged": "^15.2.1",
     "prettier": "^3.2.5",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "serve": "^14.2.1"
   }
 }

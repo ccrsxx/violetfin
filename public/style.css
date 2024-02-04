@@ -77,9 +77,10 @@
   display: none;
 }
 
-.skinHeader {
+.skinHeader,
+.skinHeader.semiTransparent {
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem) !important;
 }
 
 @media (min-width: 1280px) {
