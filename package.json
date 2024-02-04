@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/styles/index.scss:public/style.css",
+    "build:commit": "npm run build && git add public/*",
     "watch": "sass --watch src/styles/index.scss:public/style.css",
     "prepare": "husky"
   },

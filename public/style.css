@@ -1,5 +1,5 @@
 .hideMainDrawer .backgroundContainer {
-  background-image: url(https://raw.githubusercontent.com/ccrsxx/jellyfin/main/public/login.png);
+  background-image: url("login.png");
   background-size: cover;
 }
 .hideMainDrawer .skinHeader {
