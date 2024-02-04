@@ -1,0 +1,98 @@
+.hideMainDrawer .backgroundContainer {
+  background-image: url(https://raw.githubusercontent.com/ccrsxx/jellyfin/main/public/login.png);
+  background-size: cover;
+}
+.hideMainDrawer .skinHeader {
+  display: none;
+}
+
+#loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+#loginPage h1 {
+  display: none;
+}
+#loginPage > div {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem !important;
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+}
+#loginPage form,
+#loginPage .readOnlyContent {
+  width: 100%;
+  max-width: 36rem;
+}
+#loginPage .inputContainer {
+  display: grid;
+  gap: 0.25rem;
+}
+#loginPage .inputContainer .emby-input {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border: 0;
+}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none;
+}
+
+/* BLUR NAVBAR */
+.skinHeader {
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1rem);
+}
+
+/* Reduce background backdrop  opacity */
+.backgroundContainer.withBackdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* MOVING HOMEPAGE BACKGROUND */
+@keyframes backgroundScroll {
+  0% {
+    background-position: 99% 1%;
+  }
+  20% {
+    background-position: 1% 50%;
+  }
+  40% {
+    background-position: 99% 99%;
+  }
+  60% {
+    background-position: 1% 1%;
+  }
+  80% {
+    background-position: 50% 99%;
+  }
+  100% {
+    background-position: 99% 1%;
+  }
+}
+.backdropImage {
+  background-size: 150% 150%;
+  background-position: 99% 1%;
+  animation: backgroundScroll 200s ease;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 1280px) {
+  .backdropImage {
+    background-size: 250% 150%;
+  }
+}
+/* TOP ITEM BANNER TRANSPARENT */
+@media (min-width: 1280px) {
+  #itemDetailPage > #itemBackdrop {
+    animation: none;
+    background-image: none !important;
+  }
+  #itemDetailPage > #itemBackdrop::after {
+    background: transparent;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "jellyfin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/styles/index.scss:public/style.css",
+    "watch": "sass --watch src/styles/index.scss:public/style.css",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "keywords": [],
+  "author": "ccrsxx",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.70.0"
+  }
+}

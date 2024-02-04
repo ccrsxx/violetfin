@@ -1,0 +1,52 @@
+// Login background
+.hideMainDrawer {
+  .backgroundContainer {
+    background-image: url(https://raw.githubusercontent.com/ccrsxx/jellyfin/main/public/login.png);
+    background-size: cover;
+  }
+
+  .skinHeader {
+    display: none;
+  }
+}
+
+#loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+
+  // Hide "please login" text
+  h1 {
+    display: none;
+  }
+
+  > div {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem !important;
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+  }
+
+  // Add max-width to login form container
+  form,
+  .readOnlyContent {
+    width: 100%;
+    max-width: 36rem;
+  }
+
+  .inputContainer {
+    display: grid;
+    gap: 0.25rem;
+
+    .emby-input {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 0.5rem;
+      border: 0;
+    }
+  }
+
+  .raised.cancel.block.btnForgotPassword.emby-button {
+    display: none;
+  }
+}
