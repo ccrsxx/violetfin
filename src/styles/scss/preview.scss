@@ -1,0 +1,11 @@
+// Top item banner transparent
+@media (min-width: 1280px) {
+  #itemDetailPage > #itemBackdrop {
+    animation: none;
+    background-image: none !important;
+  }
+
+  #itemDetailPage > #itemBackdrop::after {
+    background: transparent;
+  }
+}
