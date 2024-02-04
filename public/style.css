@@ -4,6 +4,12 @@
 }
 
 /* Moving homepage background */
+.backdropImage {
+  background-size: 150% 150%;
+  background-position: 99% 1%;
+  animation: backgroundScroll 200s ease;
+  animation-iteration-count: infinite;
+}
 @keyframes backgroundScroll {
   0% {
     background-position: 99% 1%;
@@ -23,12 +29,6 @@
   100% {
     background-position: 99% 1%;
   }
-}
-.backdropImage {
-  background-size: 150% 150%;
-  background-position: 99% 1%;
-  animation: backgroundScroll 200s ease;
-  animation-iteration-count: infinite;
 }
 
 @media (max-width: 1280px) {
