@@ -83,6 +83,10 @@
   backdrop-filter: blur(1rem) !important;
 }
 
+.detailRibbon {
+  background-color: rgba(32, 32, 32, 0.7);
+}
+
 @media (min-width: 1280px) {
   #itemDetailPage > #itemBackdrop {
     animation: none;
