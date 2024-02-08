@@ -3,7 +3,7 @@
 // Only apply the sidebar styles if not in settings
 .mainDrawer:has(
     ~ .mainAnimatedPages
-      > :is(#indexPage, #moviePage, #itemDetailPage, #tvRecommendedPage):not(
+      > :is(#indexPage, #moviesPage, #itemDetailPage, #tvRecommendedPage):not(
         .hide
       )
   ) {

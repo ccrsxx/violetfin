@@ -94,11 +94,22 @@
   border-radius: 0.2rem;
 }
 
-.mainDrawer:has(~ .mainAnimatedPages > :is(#indexPage, #moviePage, #itemDetailPage, #tvRecommendedPage):not(.hide)) {
+.mainDrawer:has(
+    ~ .mainAnimatedPages
+      > :is(#indexPage, #moviesPage, #itemDetailPage, #tvRecommendedPage):not(
+        .hide
+      )
+  ) {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);
 }
-.mainDrawer:has(~ .mainAnimatedPages > :is(#indexPage, #moviePage, #itemDetailPage, #tvRecommendedPage):not(.hide)) .navMenuOption:hover {
+.mainDrawer:has(
+    ~ .mainAnimatedPages
+      > :is(#indexPage, #moviesPage, #itemDetailPage, #tvRecommendedPage):not(
+        .hide
+      )
+  )
+  .navMenuOption:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
