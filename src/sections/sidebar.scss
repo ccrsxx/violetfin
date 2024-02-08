@@ -1,0 +1,15 @@
+@use "../mixins";
+
+// Only apply the sidebar styles if not in settings
+.mainDrawer:has(
+    ~ .mainAnimatedPages
+      > :is(#indexPage, #moviePage, #itemDetailPage, #tvRecommendedPage):not(
+        .hide
+      )
+  ) {
+  @include mixins.backdrop-blur($opacity: 0.6);
+
+  .navMenuOption:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
