@@ -32,7 +32,7 @@
 }
 
 .hideMainDrawer .backgroundContainer {
-  background-image: url("login.png");
+  background-image: url('login.png');
   background-size: cover;
 }
 .hideMainDrawer .skinHeader {
@@ -87,7 +87,7 @@
   transition: background-color 200ms;
 }
 .layout-desktop .listItem-withContentWrapper:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .listItem-withContentWrapper > .listItem-content > .listItemImage {
@@ -110,7 +110,7 @@
       )
   )
   .navMenuOption:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .layout-desktop .detailRibbon {
