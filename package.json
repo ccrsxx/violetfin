@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "concurrently npm:watch npm:serve",
     "serve": "serve .",
-    "build": "sass src/styles/index.scss:public/style.css",
-    "watch": "sass --watch src/styles/index.scss:public/style.css",
+    "build": "sass src/index.scss:public/style.css",
+    "watch": "sass --watch src/index.scss:public/style.css",
     "prepare": "husky",
     "build:commit": "npm run build && git add public/*"
   },

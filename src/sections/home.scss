@@ -4,13 +4,13 @@
 }
 
 /* Moving homepage background */
-.backdropImage {
+.layout-desktop .backdropImage {
   background-size: 150% 150%;
   background-position: 99% 1%;
-  animation: backgroundScroll 200s ease;
+  animation: moving-background 200s ease;
   animation-iteration-count: infinite;
 
-  @keyframes backgroundScroll {
+  @keyframes moving-background {
     0% {
       background-position: 99% 1%;
     }
@@ -29,11 +29,5 @@
     100% {
       background-position: 99% 1%;
     }
-  }
-}
-
-@media (max-width: 1280px) {
-  .backdropImage {
-    background-size: 250% 150%;
   }
 }

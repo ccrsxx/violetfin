@@ -4,13 +4,13 @@
 }
 
 /* Moving homepage background */
-.backdropImage {
+.layout-desktop .backdropImage {
   background-size: 150% 150%;
   background-position: 99% 1%;
-  animation: backgroundScroll 200s ease;
+  animation: moving-background 200s ease;
   animation-iteration-count: infinite;
 }
-@keyframes backgroundScroll {
+@keyframes moving-background {
   0% {
     background-position: 99% 1%;
   }
@@ -31,11 +31,6 @@
   }
 }
 
-@media (max-width: 1280px) {
-  .backdropImage {
-    background-size: 250% 150%;
-  }
-}
 .hideMainDrawer .backgroundContainer {
   background-image: url("login.png");
   background-size: cover;
@@ -82,21 +77,44 @@
   backdrop-filter: blur(1rem);
 }
 .skinHeader.semiTransparent {
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(1rem) !important;
 }
 
-.detailRibbon {
-  background-color: rgba(32, 32, 32, 0.7);
+.layout-desktop .listItem-withContentWrapper {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  transition: background-color 200ms;
+}
+.layout-desktop .listItem-withContentWrapper:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 1280px) {
-  #itemDetailPage > #itemBackdrop {
-    animation: none;
-    background-image: none !important;
-  }
-  #itemDetailPage > #itemBackdrop::after {
-    background: transparent;
-  }
+.listItem-withContentWrapper > .listItem-content > .listItemImage {
+  border-radius: 0.2rem;
+}
+
+.mainDrawer:has(~ .mainAnimatedPages > :is(#indexPage, #moviePage, #itemDetailPage, #tvRecommendedPage):not(.hide)) {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1rem);
+}
+.mainDrawer:has(~ .mainAnimatedPages > :is(#indexPage, #moviePage, #itemDetailPage, #tvRecommendedPage):not(.hide)) .navMenuOption:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.layout-desktop .detailRibbon {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.layout-desktop #itemDetailPage > #itemBackdrop {
+  animation: none;
+  background-image: none !important;
+}
+.layout-desktop #itemDetailPage > #itemBackdrop::after {
+  background: transparent;
+}
+
+.layout-mobile .itemBackdrop {
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

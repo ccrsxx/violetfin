@@ -1,0 +1,21 @@
+.layout-desktop {
+  // Detail ribbon transparent
+  .detailRibbon {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  // Make top item banner transparent
+  #itemDetailPage > #itemBackdrop {
+    animation: none;
+    background-image: none !important;
+
+    &::after {
+      background: transparent;
+    }
+  }
+}
+
+// Prevent top item banner from hitting the nav bar on mobile
+.layout-mobile .itemBackdrop {
+  margin-top: 4rem;
+}

@@ -1,0 +1,11 @@
+@use "../mixins";
+
+// Blur navbar background
+.skinHeader {
+  @include mixins.backdrop-blur();
+
+  // Override navbar on preview page
+  &.semiTransparent {
+    @include mixins.backdrop-blur(true);
+  }
+}
