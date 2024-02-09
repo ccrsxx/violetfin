@@ -43,7 +43,7 @@ Here are the steps to run the project locally.
    npm run dev
    ```
 
-1. Go to the `Settings > Dashboard > General > Custom CSS`, or go to `Jellyfin Settings > Display > Custom CSS`. This way you don't override the entire server's CSS, only on your current client. Make sure to enable `Disable server-provided custom CSS code` to prevent the server's CSS from overriding your custom CSS.
+1. Go to the `Settings > Dashboard > General > Custom CSS`, or go to `Settings > Display > Custom CSS`. This way you don't override the entire server's CSS, only on your current client. Make sure to enable `Disable server-provided custom CSS code` to prevent the server's CSS from overriding your custom CSS.
 
 1. Paste the development CSS code into the Custom CSS input:
 
