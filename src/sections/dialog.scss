@@ -3,6 +3,13 @@
 .dialog {
   @include mixins.backdrop-blur($opacity: 0.6);
 
+  border-radius: 0.2rem !important;
+
+  // Remove default background color from filter dialog section dropdown, as it's already blurred
+  .collapseContent {
+    background-color: transparent;
+  }
+
   .actionSheetContent > .actionSheetScroller {
     .actionsheetDivider {
       background-color: rgba(255, 255, 255, 0.1);
@@ -11,10 +18,5 @@
     .actionSheetMenuItem:hover {
       background-color: rgba(255, 255, 255, 0.1);
     }
-  }
-
-  // Remove default background color from filter dialog section dropdown, as it's already blurred
-  .collapseContent {
-    background-color: transparent;
   }
 }
