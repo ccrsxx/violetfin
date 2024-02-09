@@ -4,6 +4,8 @@ Just my personal Jellyfin theme.
 
 ## Installation
 
+How to install the theme.
+
 1. Go to the Jellyfin `Settings > Dashboard > General > Custom CSS`
 1. Paste this CSS code into the Custom CSS input:
 
