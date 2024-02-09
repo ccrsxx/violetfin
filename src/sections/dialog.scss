@@ -1,0 +1,9 @@
+@use '../mixins';
+
+.dialog {
+  @include mixins.backdrop-blur($opacity: 0.6);
+
+  .actionsheetDivider {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
