@@ -20,7 +20,7 @@
 }
 
 @mixin moving-backdrop-image($mobile: false) {
-  background-size: 150% 150% if($mobile, cover, '');
+  background-size: if($mobile, cover, 150% 150%);
   background-position: 99% 1%;
   animation: moving-background-animation 200s ease;
   animation-iteration-count: infinite;

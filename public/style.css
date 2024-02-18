@@ -25,7 +25,7 @@
 
 /* Apply moving backdrop image */
 .layout-desktop .backdropImage {
-  background-size: 150% 150% '';
+  background-size: 150% 150%;
   background-position: 99% 1%;
   animation: moving-background-animation 200s ease;
   animation-iteration-count: infinite;
@@ -33,7 +33,7 @@
 
 /* Apply moving backdrop image for mobile */
 .layout-mobile .backdropImage {
-  background-size: 150% 150% cover;
+  background-size: cover;
   background-position: 99% 1%;
   animation: moving-background-animation 200s ease;
   animation-iteration-count: infinite;
