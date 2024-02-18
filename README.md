@@ -15,6 +15,8 @@ How to install the theme.
 
 1. Click Save
 
+Optional: this theme make a heavy use of Backdrops on the library, it has cool moving animations on the library background. You can enable it by going to `Settings > Display > Backdrops`. There's also a way to enable the backdrop on all users, you can follow the tutorial [here](https://github.com/BobHasNoSoul/jellyfin-mods#force-backdrops-for-all-users-108x).
+
 ## Development
 
 Here are the steps to run the project locally.
