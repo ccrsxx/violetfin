@@ -1,33 +1,42 @@
+@keyframes moving-background-animation {
+  0% {
+    background-position: 99% 1%;
+  }
+  20% {
+    background-position: 1% 50%;
+  }
+  40% {
+    background-position: 99% 99%;
+  }
+  60% {
+    background-position: 1% 1%;
+  }
+  80% {
+    background-position: 50% 99%;
+  }
+  100% {
+    background-position: 99% 1%;
+  }
+}
+
+@mixin moving-backdrop-image($mobile: false) {
+  background-size: 150% 150% if($mobile, cover, '');
+  background-position: 99% 1%;
+  animation: moving-background-animation 200s ease;
+  animation-iteration-count: infinite;
+}
+
 /* Reduce background backdrop opacity */
 .backgroundContainer.withBackdrop {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Moving homepage background */
+/* Apply moving backdrop image */
 .layout-desktop .backdropImage {
-  background-size: 150% 150%;
-  background-position: 99% 1%;
-  animation: moving-background 200s ease;
-  animation-iteration-count: infinite;
+  @include moving-backdrop-image();
+}
 
-  @keyframes moving-background {
-    0% {
-      background-position: 99% 1%;
-    }
-    20% {
-      background-position: 1% 50%;
-    }
-    40% {
-      background-position: 99% 99%;
-    }
-    60% {
-      background-position: 1% 1%;
-    }
-    80% {
-      background-position: 50% 99%;
-    }
-    100% {
-      background-position: 99% 1%;
-    }
-  }
+/* Apply moving backdrop image for mobile */
+.layout-mobile .backdropImage {
+  @include moving-backdrop-image($mobile: true);
 }
