@@ -20,3 +20,8 @@
     }
   }
 }
+
+// For message toasts
+.toast {
+  @include mixins.backdrop-blur($opacity: 0.6);
+}
