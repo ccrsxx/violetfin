@@ -12,12 +12,25 @@
   }
 }
 
+// Volume tooltip when changing volume
 .iconOsd {
   @include helper.backdrop-blur($opacity: 0.6);
 }
 
-.sliderBubble {
+// Tooltip above the volume buttons
+.volumeButtons .sliderBubble {
   border-radius: variables.$border-radius;
 
   @include helper.backdrop-blur($opacity: 0.6);
+}
+
+// Fix weird black bar on chapter slider tooltip
+.osdControls .sliderBubble {
+  border-radius: variables.$border-radius;
+
+  .chapterThumbContainer {
+    display: flex;
+    overflow: hidden;
+    border-radius: variables.$border-radius;
+  }
 }

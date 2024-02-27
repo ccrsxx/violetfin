@@ -96,10 +96,19 @@
   backdrop-filter: blur(1rem);
 }
 
-.sliderBubble {
+.volumeButtons .sliderBubble {
   border-radius: 0.2rem;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);
+}
+
+.osdControls .sliderBubble {
+  border-radius: 0.2rem;
+}
+.osdControls .sliderBubble .chapterThumbContainer {
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.2rem;
 }
 
 .skinHeader {
@@ -151,8 +160,7 @@
 .countIndicator,
 .playedIndicator,
 .fullSyncIndicator,
-.mediaSourceIndicator,
-.itemProgressBarForeground {
+.mediaSourceIndicator {
   background-color: violet;
 }
 
@@ -171,9 +179,83 @@
   color: violet;
 }
 
-.paper-icon-button-light:hover {
+.paper-icon-button-light:is(:hover, :active) {
   color: violet !important;
   background-color: rgba(238, 130, 238, 0.2) !important;
+}
+
+:is(.emby-input, .emby-textarea):focus {
+  border-color: violet;
+}
+
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+  color: violet;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline {
+  background-color: violet;
+}
+
+.emby-checkbox:is(:checked, :focus:not(:checked)) + span + .checkboxOutline {
+  border-color: violet;
+}
+
+.emby-select-withcolor:focus {
+  border-color: violet !important;
+}
+
+.button-submit,
+.button-submit:is(:focus, :active) {
+  background-color: violet;
+}
+
+.button-link {
+  color: violet;
+}
+
+.selectionCommandsPanel {
+  background-color: violet;
+}
+.selectionCommandsPanel .paper-icon-button-light:hover {
+  filter: brightness(1.7);
+}
+
+.itemSelectionPanel {
+  border-color: violet;
+  border-radius: 0.2rem;
+}
+
+.navMenuOption-selected {
+  background-color: violet !important;
+}
+
+:is(
+    #repositories,
+    .subtitleList,
+    .activityItems,
+    .systemProfiles,
+    .subtitleResults,
+    .notificationList,
+    .divScheduledTasks,
+    .userActivityItems
+  )
+  .listItemIcon {
+  background-color: violet !important;
+}
+
+.content-primary > div[data-role='controlgroup'] > .ui-btn-active {
+  background-color: violet !important;
+  color: white !important;
+}
+
+.defaultCardBackground {
+  background-color: violet;
+}
+
+:is(.innerCardFooter, .playbackProgress) .itemProgressBarForeground {
+  background-color: violet;
 }
 
 .mainDrawer:has(
@@ -208,6 +290,32 @@
 
 .layout-mobile .itemBackdrop {
   margin-top: 4rem;
+}
+
+.paperList {
+  border-radius: 0.2rem;
+}
+
+.dashboardSection > .paperList:has(#serverName) {
+  display: grid;
+  gap: 1rem;
+}
+.dashboardSection > .paperList:has(#serverName) p {
+  margin: 0;
+}
+
+:is(.activityItems, .userActivityItems) .listItemIcon {
+  margin-left: 1.5rem;
+}
+
+:is(#repositories, .systemProfiles, .notificationList, .divScheduledTasks)
+  .paperList:has(.listItem) {
+  display: grid;
+}
+:is(#repositories, .systemProfiles, .notificationList, .divScheduledTasks)
+  .paperList:has(.listItem)
+  .listItem {
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

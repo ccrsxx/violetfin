@@ -1,0 +1,32 @@
+@use '../lib/helper';
+@use '../lib/variables';
+
+// Widget container
+.paperList {
+  border-radius: variables.$border-radius;
+}
+
+// Fix server info widget excessive margin
+.dashboardSection > .paperList:has(#serverName) {
+  display: grid;
+  gap: 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+// Fix bad margin layout on activity items
+:is(.activityItems, .userActivityItems) .listItemIcon {
+  margin-left: 1.5rem;
+}
+
+// Fix small margin on some of settings widgets
+:is(#repositories, .systemProfiles, .notificationList, .divScheduledTasks)
+  .paperList:has(.listItem) {
+  display: grid;
+
+  .listItem {
+    padding: 0.5rem;
+  }
+}
