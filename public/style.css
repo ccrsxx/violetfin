@@ -174,8 +174,7 @@
   background-color: violet;
 }
 
-.detailButton:hover,
-.emby-tab-button:hover {
+:is(.detailButton, .emby-tab-button):hover {
   color: violet;
 }
 
@@ -197,7 +196,6 @@
 .emby-checkbox:checked + span + .checkboxOutline {
   background-color: violet;
 }
-
 .emby-checkbox:is(:checked, :focus:not(:checked)) + span + .checkboxOutline {
   border-color: violet;
 }

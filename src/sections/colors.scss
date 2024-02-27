@@ -27,8 +27,7 @@
 }
 
 // Header tab button, series detail button
-.detailButton:hover,
-.emby-tab-button:hover {
+:is(.detailButton, .emby-tab-button):hover {
   color: variables.$accent-color;
 }
 
@@ -52,14 +51,16 @@
   color: variables.$accent-color;
 }
 
-// Checkbox background when checked
-.emby-checkbox:checked + span + .checkboxOutline {
-  background-color: variables.$accent-color;
-}
+.emby-checkbox {
+  // Checkbox background when checked
+  &:checked + span + .checkboxOutline {
+    background-color: variables.$accent-color;
+  }
 
-// Checkbox outline when checked and focus but not checked
-.emby-checkbox:is(:checked, :focus:not(:checked)) + span + .checkboxOutline {
-  border-color: variables.$accent-color;
+  // Checkbox outline when checked and focus but not checked
+  &:is(:checked, :focus:not(:checked)) + span + .checkboxOutline {
+    border-color: variables.$accent-color;
+  }
 }
 
 // Make select border color use the accent color when focused
