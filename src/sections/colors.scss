@@ -1,0 +1,37 @@
+@use '../lib/variables';
+
+// Card indicators
+.countIndicator,
+.playedIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator,
+.itemProgressBarForeground {
+  background-color: variables.$accent-color;
+}
+
+// Loading spinner
+.mdl-spinner__layer {
+  border-color: variables.$accent-color;
+}
+
+// Video player
+// Slider thumb
+.mdl-slider::-webkit-slider-thumb,
+// Watched progress left side of the slider
+.mdl-slider-background-lower,
+// Current volume progress left side of the slider
+.iconOsdProgressInner {
+  background-color: variables.$accent-color;
+}
+
+// Header tab button, series detail button
+.detailButton:hover,
+.emby-tab-button:hover {
+  color: variables.$accent-color;
+}
+
+// Header button, card series button, and card episode button
+.paper-icon-button-light:hover {
+  color: variables.$accent-color !important;
+  background-color: rgba(variables.$accent-color, 0.2) !important;
+}

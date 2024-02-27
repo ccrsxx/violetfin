@@ -1,3 +1,23 @@
+@use '../lib/helper';
+@use '../lib/variables';
+
 .playerStats {
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: none;
+  transition: all 200ms;
+  transition-property: background-color, backdrop-filter;
+
+  &:hover {
+    @include helper.backdrop-blur($opacity: 0.6);
+  }
+}
+
+.iconOsd {
+  @include helper.backdrop-blur($opacity: 0.6);
+}
+
+.sliderBubble {
+  border-radius: variables.$border-radius;
+
+  @include helper.backdrop-blur($opacity: 0.6);
 }

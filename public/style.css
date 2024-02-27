@@ -82,6 +82,24 @@
 
 .playerStats {
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: none;
+  transition: all 200ms;
+  transition-property: background-color, backdrop-filter;
+}
+.playerStats:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1rem);
+}
+
+.iconOsd {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1rem);
+}
+
+.sliderBubble {
+  border-radius: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1rem);
 }
 
 .skinHeader {
@@ -128,6 +146,34 @@
 .toast {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);
+}
+
+.countIndicator,
+.playedIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator,
+.itemProgressBarForeground {
+  background-color: violet;
+}
+
+.mdl-spinner__layer {
+  border-color: violet;
+}
+
+.mdl-slider::-webkit-slider-thumb,
+.mdl-slider-background-lower,
+.iconOsdProgressInner {
+  background-color: violet;
+}
+
+.detailButton:hover,
+.emby-tab-button:hover {
+  color: violet;
+}
+
+.paper-icon-button-light:hover {
+  color: violet !important;
+  background-color: rgba(238, 130, 238, 0.2) !important;
 }
 
 .mainDrawer:has(
