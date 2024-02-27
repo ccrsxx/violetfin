@@ -1,0 +1,8 @@
+@mixin backdrop-blur($override: false, $opacity: 0.4, $blur: 1rem) {
+  background-color: rgba(0, 0, 0, $opacity);
+  backdrop-filter: blur($blur) if-important($override);
+}
+
+@function if-important($important) {
+  @return #{if($important, '!important', '')};
+}

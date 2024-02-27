@@ -1,4 +1,4 @@
-@use '../mixins';
+@use '../lib/helper';
 
 // Only apply the sidebar styles if not in settings
 .mainDrawer:has(
@@ -7,7 +7,7 @@
         .hide
       )
   ) {
-  @include mixins.backdrop-blur($opacity: 0.6);
+  @include helper.backdrop-blur($opacity: 0.6);
 
   .navMenuOption:hover {
     background-color: rgba(255, 255, 255, 0.1);

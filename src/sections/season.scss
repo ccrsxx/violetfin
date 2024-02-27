@@ -1,6 +1,8 @@
+@use '../lib/variables';
+
 .layout-desktop .listItem-withContentWrapper {
   padding: 1rem;
-  border-radius: 0.2rem;
+  border-radius: variables.$border-radius;
   transition: background-color 200ms;
 
   &:hover {
@@ -8,6 +10,10 @@
   }
 }
 
+.layout-mobile .listItem-bottomoverview {
+  margin: 1rem 0;
+}
+
 .listItem-withContentWrapper > .listItem-content > .listItemImage {
-  border-radius: 0.2rem;
+  border-radius: variables.$border-radius;
 }

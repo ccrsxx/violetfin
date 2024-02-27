@@ -1,9 +1,10 @@
-@use '../mixins';
+@use '../lib/helper';
+@use '../lib/variables';
 
 .dialog {
-  @include mixins.backdrop-blur($opacity: 0.6);
+  @include helper.backdrop-blur($opacity: 0.6);
 
-  border-radius: 0.2rem !important;
+  border-radius: variables.$border-radius !important;
 
   // Remove default background color from filter dialog section dropdown, as it's already blurred
   .collapseContent {
@@ -23,5 +24,5 @@
 
 // For message toasts
 .toast {
-  @include mixins.backdrop-blur($opacity: 0.6);
+  @include helper.backdrop-blur($opacity: 0.6);
 }

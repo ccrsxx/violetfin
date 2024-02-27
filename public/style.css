@@ -102,6 +102,10 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.layout-mobile .listItem-bottomoverview {
+  margin: 1rem 0;
+}
+
 .listItem-withContentWrapper > .listItem-content > .listItemImage {
   border-radius: 0.2rem;
 }

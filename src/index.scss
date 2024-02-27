@@ -1,1 +1,10 @@
-@use 'sections';
+@use 'sections/home';
+@use 'sections/login';
+@use 'sections/player';
+@use 'sections/navbar';
+@use 'sections/season';
+@use 'sections/dialog';
+@use 'sections/colors';
+@use 'sections/sidebar';
+@use 'sections/preview';
+@use 'sections/settings';
