@@ -265,7 +265,7 @@
   background-color: violet;
 }
 
-:is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+.trackSelections select:not(:disabled) {
   border: 0;
   padding: 0.25rem 0.5rem !important;
 }
@@ -280,7 +280,7 @@
 .layout-desktop #itemDetailPage > #itemBackdrop::after {
   background: transparent;
 }
-.layout-desktop :is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+.layout-desktop .trackSelections select:not(:disabled) {
   background-color: rgba(0, 0, 0, 0.4);
 }
 

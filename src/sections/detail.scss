@@ -1,5 +1,5 @@
 // Better select input audio and subtitles on movie detail page
-:is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+.trackSelections select:not(:disabled) {
   border: 0;
   padding: 0.25rem 0.5rem !important;
 }
@@ -21,7 +21,7 @@
   }
 
   // Make select more transparent
-  :is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+  .trackSelections select:not(:disabled) {
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
