@@ -265,6 +265,29 @@
   background-color: violet;
 }
 
+:is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+  border: 0;
+  padding: 0.25rem 0.5rem !important;
+}
+
+.layout-desktop .detailRibbon {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.layout-desktop #itemDetailPage > #itemBackdrop {
+  animation: none;
+  background-image: none !important;
+}
+.layout-desktop #itemDetailPage > #itemBackdrop::after {
+  background: transparent;
+}
+.layout-desktop :is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.layout-mobile .itemBackdrop {
+  margin-top: 4rem;
+}
+
 .mainDrawer:has(
     ~ .mainAnimatedPages
       > :is(#indexPage, #moviesPage, #itemDetailPage, #tvRecommendedPage):not(
@@ -282,21 +305,6 @@
   )
   .navMenuOption:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.layout-desktop .detailRibbon {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.layout-desktop #itemDetailPage > #itemBackdrop {
-  animation: none;
-  background-image: none !important;
-}
-.layout-desktop #itemDetailPage > #itemBackdrop::after {
-  background: transparent;
-}
-
-.layout-mobile .itemBackdrop {
-  margin-top: 4rem;
 }
 
 .paperList {

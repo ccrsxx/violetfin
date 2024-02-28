@@ -1,3 +1,9 @@
+// Better select input audio and subtitles on movie detail page
+:is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+  border: 0;
+  padding: 0.25rem 0.5rem !important;
+}
+
 .layout-desktop {
   // Detail ribbon transparent
   .detailRibbon {
@@ -12,6 +18,11 @@
     &::after {
       background: transparent;
     }
+  }
+
+  // Make select more transparent
+  :is(.selectAudioContainer, .selectSubtitlesContainer) > select {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 
