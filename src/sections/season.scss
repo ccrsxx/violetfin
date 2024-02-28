@@ -1,20 +1,29 @@
 @use '../lib/variables';
 
-.layout-desktop .listItem-withContentWrapper {
-  padding: 1rem;
+.listItem-withContentWrapper {
   border-radius: variables.$border-radius;
-  transition: background-color 200ms;
 
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+  .layout-desktop & {
+    padding: 1rem;
+    transition: background-color 200ms;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .layout-mobile & {
+    padding: 0.5rem;
+
+    .listItem-bottomoverview {
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .listItem-content > .listItemImage {
+    border-radius: variables.$border-radius;
   }
 }
 
-.layout-mobile .listItem-bottomoverview {
-  margin: 1rem 0;
-}
-
 // TODO: Handle darkening the image on hover
-.listItem-withContentWrapper > .listItem-content > .listItemImage {
-  border-radius: variables.$border-radius;
-}

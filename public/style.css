@@ -120,20 +120,24 @@
   backdrop-filter: blur(1rem) !important;
 }
 
+.listItem-withContentWrapper {
+  border-radius: 0.2rem;
+}
 .layout-desktop .listItem-withContentWrapper {
   padding: 1rem;
-  border-radius: 0.2rem;
   transition: background-color 200ms;
 }
 .layout-desktop .listItem-withContentWrapper:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
-
-.layout-mobile .listItem-bottomoverview {
-  margin: 1rem 0;
+.layout-mobile .listItem-withContentWrapper {
+  padding: 0.5rem;
 }
-
-.listItem-withContentWrapper > .listItem-content > .listItemImage {
+.layout-mobile .listItem-withContentWrapper .listItem-bottomoverview {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.listItem-withContentWrapper .listItem-content > .listItemImage {
   border-radius: 0.2rem;
 }
 
