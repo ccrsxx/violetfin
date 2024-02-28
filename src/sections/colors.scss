@@ -42,7 +42,20 @@
   border-color: variables.$accent-color;
 }
 
-// TODO: Handle radio button on sort by dialog
+// Radio button on sort by dialog
+.mdl-radio__button:focus + .mdl-radio__circles {
+  .mdl-radio__inner-circle {
+    fill: variables.$accent-color;
+  }
+
+  .mdl-radio__outer-circle {
+    stroke: variables.$accent-color;
+  }
+
+  .mdl-radio__focus-circle {
+    background-color: variables.$accent-color;
+  }
+}
 
 // Input label when focused
 .inputLabelFocused,
@@ -69,8 +82,7 @@
 }
 
 // Submit button on normal state, focus, and active
-.button-submit,
-.button-submit:is(:focus, :active) {
+:is(.button-submit, .button-submit:is(:focus, :active)) {
   background-color: variables.$accent-color;
 }
 
@@ -128,7 +140,7 @@
   background-color: variables.$accent-color;
 }
 
-// Card footer on active devices
+// Progress bar on dashboard card footer and continue watching card
 :is(.innerCardFooter, .playbackProgress) .itemProgressBarForeground {
   background-color: variables.$accent-color;
 }

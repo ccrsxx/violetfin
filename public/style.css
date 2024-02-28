@@ -187,6 +187,16 @@
   border-color: violet;
 }
 
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle {
+  fill: violet;
+}
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle {
+  stroke: violet;
+}
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__focus-circle {
+  background-color: violet;
+}
+
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused {
@@ -204,8 +214,7 @@
   border-color: violet !important;
 }
 
-.button-submit,
-.button-submit:is(:focus, :active) {
+:is(.button-submit, .button-submit:is(:focus, :active)) {
   background-color: violet;
 }
 
