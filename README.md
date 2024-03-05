@@ -10,7 +10,7 @@ How to install the theme.
 1. Paste this CSS code into the Custom CSS input:
 
    ```css
-   @import url('https://ccrsxx.github.io/jellyfin/public/style.css');
+   @import url('https://ccrsxx.github.io/violetfin/public/style.css');
    ```
 
 1. Click Save
@@ -24,13 +24,13 @@ Here are the steps to run the project locally.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/ccrsxx/jellyfin.git
+   git clone https://github.com/ccrsxx/violetfin.git
    ```
 
 1. Change directory to the project
 
    ```bash
-   cd jellyfin
+   cd violetfin
    ```
 
 1. Install dependencies
