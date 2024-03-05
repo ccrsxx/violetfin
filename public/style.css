@@ -97,6 +97,7 @@
 }
 
 .volumeButtons .sliderBubble {
+  z-index: 10;
   border-radius: 0.2rem;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);

@@ -19,6 +19,7 @@
 
 // Tooltip above the volume buttons
 .volumeButtons .sliderBubble {
+  z-index: 10;
   border-radius: variables.$border-radius;
 
   @include helper.backdrop-blur($opacity: 0.6);
