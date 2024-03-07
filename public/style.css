@@ -160,6 +160,8 @@
 .toast {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);
+  min-width: min-content;
+  max-width: 36rem;
 }
 
 .countIndicator,

@@ -25,4 +25,7 @@
 // For message toasts
 .toast {
   @include helper.backdrop-blur($opacity: 0.6);
+
+  min-width: min-content;
+  max-width: 36rem;
 }
