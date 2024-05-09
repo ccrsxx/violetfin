@@ -1,3 +1,11 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes moving-background-animation {
   0% {
     background-position: 99% 1%;
@@ -16,14 +24,6 @@
   }
   100% {
     background-position: 99% 1%;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 /* Reduce background backdrop opacity */
