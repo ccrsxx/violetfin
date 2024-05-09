@@ -19,11 +19,22 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @mixin moving-backdrop-image($mobile: false) {
   background-size: if($mobile, cover, 150% 150%);
   background-position: 99% 1%;
-  animation: moving-background-animation 200s ease;
-  animation-iteration-count: infinite;
+  animation-name: fade-in, moving-background-animation;
+  animation-duration: 1s, 180s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1, infinite;
 }
 
 /* Reduce background backdrop opacity */

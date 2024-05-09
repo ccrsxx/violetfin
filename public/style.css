@@ -18,6 +18,14 @@
     background-position: 99% 1%;
   }
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Reduce background backdrop opacity */
 .backgroundContainer.withBackdrop {
   background-color: rgba(0, 0, 0, 0.7);
@@ -27,16 +35,20 @@
 .layout-desktop .backdropImage {
   background-size: 150% 150%;
   background-position: 99% 1%;
-  animation: moving-background-animation 200s ease;
-  animation-iteration-count: infinite;
+  animation-name: fade-in, moving-background-animation;
+  animation-duration: 1s, 180s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1, infinite;
 }
 
 /* Apply moving backdrop image for mobile */
 .layout-mobile .backdropImage {
   background-size: cover;
   background-position: 99% 1%;
-  animation: moving-background-animation 200s ease;
-  animation-iteration-count: infinite;
+  animation-name: fade-in, moving-background-animation;
+  animation-duration: 1s, 180s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1, infinite;
 }
 
 .hideMainDrawer .backgroundContainer {
