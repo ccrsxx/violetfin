@@ -1,4 +1,4 @@
-@keyframes fade-in {
+@keyframes moving-fade-in {
   0% {
     opacity: 0;
   }
@@ -35,7 +35,7 @@
 .layout-desktop .backdropImage {
   background-size: 150% 150%;
   background-position: 99% 1%;
-  animation-name: fade-in, moving-background-animation;
+  animation-name: moving-fade-in, moving-background-animation;
   animation-duration: 1s, 180s;
   animation-timing-function: ease;
   animation-iteration-count: 1, infinite;
@@ -45,7 +45,7 @@
 .layout-mobile .backdropImage {
   background-size: cover;
   background-position: 99% 1%;
-  animation-name: fade-in, moving-background-animation;
+  animation-name: moving-fade-in, moving-background-animation;
   animation-duration: 1s, 180s;
   animation-timing-function: ease;
   animation-iteration-count: 1, infinite;
