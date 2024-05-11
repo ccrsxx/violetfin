@@ -32,7 +32,7 @@
 }
 
 /* Apply moving backdrop image */
-.layout-desktop .backdropImage {
+.layout-desktop .backdropImageFadeIn {
   background-size: 150% 150%;
   background-position: 99% 1%;
   animation-name: moving-fade-in, moving-background-animation;
@@ -42,7 +42,7 @@
 }
 
 /* Apply moving backdrop image for mobile */
-.layout-mobile .backdropImage {
+.layout-mobile .backdropImageFadeIn {
   background-size: cover;
   background-position: 99% 1%;
   animation-name: moving-fade-in, moving-background-animation;

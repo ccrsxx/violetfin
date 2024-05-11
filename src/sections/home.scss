@@ -43,11 +43,11 @@
 }
 
 /* Apply moving backdrop image */
-.layout-desktop .backdropImage {
+.layout-desktop .backdropImageFadeIn {
   @include moving-backdrop-image();
 }
 
 /* Apply moving backdrop image for mobile */
-.layout-mobile .backdropImage {
+.layout-mobile .backdropImageFadeIn {
   @include moving-backdrop-image($mobile: true);
 }
