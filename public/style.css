@@ -31,8 +31,13 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Remove default backdrop image animation */
+.backdropImageFadeIn {
+  animation: none;
+}
+
 /* Apply moving backdrop image */
-.layout-desktop .backdropImageFadeIn {
+.layout-desktop .backdropImage {
   background-size: 150% 150%;
   background-position: 99% 1%;
   animation-name: moving-fade-in, moving-background-animation;
@@ -42,7 +47,7 @@
 }
 
 /* Apply moving backdrop image for mobile */
-.layout-mobile .backdropImageFadeIn {
+.layout-mobile .backdropImage {
   background-size: cover;
   background-position: 99% 1%;
   animation-name: moving-fade-in, moving-background-animation;

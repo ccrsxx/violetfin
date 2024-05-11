@@ -42,12 +42,17 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Remove default backdrop image animation */
+.backdropImageFadeIn {
+  animation: none;
+}
+
 /* Apply moving backdrop image */
-.layout-desktop .backdropImageFadeIn {
+.layout-desktop .backdropImage {
   @include moving-backdrop-image();
 }
 
 /* Apply moving backdrop image for mobile */
-.layout-mobile .backdropImageFadeIn {
+.layout-mobile .backdropImage {
   @include moving-backdrop-image($mobile: true);
 }
