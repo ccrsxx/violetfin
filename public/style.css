@@ -336,4 +336,8 @@
   border-radius: 0.2rem;
 }
 
+.dashboardSection > .paperList:has(#serverName) {
+  display: grid;
+}
+
 /*# sourceMappingURL=style.css.map */

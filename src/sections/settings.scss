@@ -5,3 +5,8 @@
 .paperList {
   border-radius: variables.$border-radius;
 }
+
+// Prevent server info widget to overflow too much
+.dashboardSection > .paperList:has(#serverName) {
+  display: grid;
+}
