@@ -42,6 +42,8 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* TODO: Fix backdrop flickering when the browser idling and unfocussed for long time  */
+
 /* Remove default backdrop image animation */
 .backdropImageFadeIn {
   animation: none;

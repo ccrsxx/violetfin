@@ -1,12 +1,6 @@
 @use '../lib/helper';
 
-// Only apply the sidebar styles if not in settings
-.mainDrawer:has(
-    ~ .mainAnimatedPages
-      > :is(#indexPage, #moviesPage, #itemDetailPage, #tvRecommendedPage):not(
-        .hide
-      )
-  ) {
+.mainDrawer {
   @include helper.backdrop-blur($opacity: 0.6);
 
   .navMenuOption:hover {

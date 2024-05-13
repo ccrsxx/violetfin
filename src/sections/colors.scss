@@ -82,7 +82,8 @@
 }
 
 // Submit button on normal state, focus, and active
-:is(.button-submit, .button-submit:is(:focus, :active)) {
+.button-submit,
+.button-submit:is(:focus, :active) {
   background-color: variables.$accent-color;
 }
 
@@ -114,6 +115,16 @@
   background-color: variables.$accent-color !important;
 }
 
+// Sidebar menu on settings with new material ui
+.MuiListItemButton-root.Mui-selected {
+  background-color: rgba(variables.$accent-color, 0.2) !important;
+}
+
+// Main primary new material ui button
+.MuiButton-containedPrimary {
+  background-color: variables.$accent-color;
+}
+
 // Each container that has an item icon
 :is(
     #repositories,
@@ -124,7 +135,8 @@
     .subtitleResults,
     .notificationList,
     .divScheduledTasks,
-    .userActivityItems
+    .userActivityItems,
+    .serverActivityItems
   )
   .listItemIcon {
   background-color: variables.$accent-color !important;

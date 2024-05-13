@@ -31,6 +31,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* TODO: Fix backdrop flickering when the browser idling and unfocussed for long time  */
 /* Remove default backdrop image animation */
 .backdropImageFadeIn {
   animation: none;
@@ -238,7 +239,8 @@
   border-color: violet !important;
 }
 
-:is(.button-submit, .button-submit:is(:focus, :active)) {
+.button-submit,
+.button-submit:is(:focus, :active) {
   background-color: violet;
 }
 
@@ -262,6 +264,14 @@
   background-color: violet !important;
 }
 
+.MuiListItemButton-root.Mui-selected {
+  background-color: rgba(238, 130, 238, 0.2) !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: violet;
+}
+
 :is(
     #repositories,
     .subtitleList,
@@ -271,7 +281,8 @@
     .subtitleResults,
     .notificationList,
     .divScheduledTasks,
-    .userActivityItems
+    .userActivityItems,
+    .serverActivityItems
   )
   .listItemIcon {
   background-color: violet !important;
@@ -313,49 +324,16 @@
   margin-top: 4rem;
 }
 
-.mainDrawer:has(
-    ~ .mainAnimatedPages
-      > :is(#indexPage, #moviesPage, #itemDetailPage, #tvRecommendedPage):not(
-        .hide
-      )
-  ) {
+.mainDrawer {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);
 }
-.mainDrawer:has(
-    ~ .mainAnimatedPages
-      > :is(#indexPage, #moviesPage, #itemDetailPage, #tvRecommendedPage):not(
-        .hide
-      )
-  )
-  .navMenuOption:hover {
+.mainDrawer .navMenuOption:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .paperList {
   border-radius: 0.2rem;
-}
-
-.dashboardSection > .paperList:has(#serverName) {
-  display: grid;
-  gap: 1rem;
-}
-.dashboardSection > .paperList:has(#serverName) p {
-  margin: 0;
-}
-
-:is(.activityItems, .userActivityItems) .listItemIcon {
-  margin-left: 1.5rem;
-}
-
-:is(#repositories, .systemProfiles, .notificationList, .divScheduledTasks)
-  .paperList:has(.listItem) {
-  display: grid;
-}
-:is(#repositories, .systemProfiles, .notificationList, .divScheduledTasks)
-  .paperList:has(.listItem)
-  .listItem {
-  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
