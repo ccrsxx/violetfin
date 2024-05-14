@@ -272,6 +272,20 @@
   background-color: violet;
 }
 
+progress {
+  border-radius: 0.2rem;
+}
+progress::-webkit-progress-bar {
+  border-radius: 0.2rem;
+}
+progress::-webkit-progress-value {
+  border-radius: 0.2rem;
+  background-color: violet;
+}
+progress + span {
+  color: violet !important;
+}
+
 :is(
     #repositories,
     .subtitleList,
@@ -281,10 +295,13 @@
     .subtitleResults,
     .notificationList,
     .divScheduledTasks,
-    .userActivityItems,
-    .serverActivityItems
+    .userActivityItems
   )
   .listItemIcon {
+  background-color: violet !important;
+}
+
+.serverActivityItems > .listItem > .listItemIcon.notifications {
   background-color: violet !important;
 }
 

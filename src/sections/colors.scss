@@ -125,6 +125,24 @@
   background-color: variables.$accent-color;
 }
 
+// Progress bar on running tasks
+progress {
+  border-radius: variables.$border-radius;
+
+  &::-webkit-progress-bar {
+    border-radius: variables.$border-radius;
+  }
+
+  &::-webkit-progress-value {
+    border-radius: variables.$border-radius;
+    background-color: variables.$accent-color;
+  }
+
+  & + span {
+    color: variables.$accent-color !important;
+  }
+}
+
 // Each container that has an item icon
 :is(
     #repositories,
@@ -135,10 +153,14 @@
     .subtitleResults,
     .notificationList,
     .divScheduledTasks,
-    .userActivityItems,
-    .serverActivityItems
+    .userActivityItems
   )
   .listItemIcon {
+  background-color: variables.$accent-color !important;
+}
+
+// Only colors the notification icon that has info variant
+.serverActivityItems > .listItem > .listItemIcon.notifications {
   background-color: variables.$accent-color !important;
 }
 
