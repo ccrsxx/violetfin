@@ -268,6 +268,7 @@
   background-color: rgba(238, 130, 238, 0.2) !important;
 }
 
+.MuiChip-colorInfo,
 .MuiButton-containedPrimary {
   background-color: violet;
 }
