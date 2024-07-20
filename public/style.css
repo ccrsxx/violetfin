@@ -109,6 +109,12 @@
   backdrop-filter: blur(1rem);
 }
 
+.osdMediaStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .iconOsd {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);

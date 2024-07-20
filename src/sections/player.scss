@@ -12,6 +12,13 @@
   }
 }
 
+// Fetching additional data info above seekbar
+.osdMediaStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 // Volume tooltip when changing volume
 .iconOsd {
   @include helper.backdrop-blur($opacity: 0.6);
