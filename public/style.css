@@ -75,15 +75,12 @@
   display: none;
 }
 #loginPage > div {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 2rem !important;
-  backdrop-filter: blur(1rem);
-  border-radius: 1rem;
-}
-#loginPage form,
-#loginPage .readOnlyContent {
   width: 100%;
+  padding: 2rem !important;
   max-width: 36rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 #loginPage .inputContainer {
   display: grid;
