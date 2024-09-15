@@ -1,6 +1,6 @@
 @use '../lib/variables';
 
-// General
+/** GENERAL UI */
 
 // Card indicators
 .countIndicator,
@@ -15,17 +15,6 @@
   border-color: variables.$accent-color;
 }
 
-// Video player
-
-// Slider thumb
-.mdl-slider::-webkit-slider-thumb,
-// Watched progress left side of the slider
-.mdl-slider-background-lower,
-// Current volume progress left side of the slider
-.iconOsdProgressInner {
-  background-color: variables.$accent-color;
-}
-
 // Header tab button, series detail button
 :is(.detailButton, .emby-tab-button):hover {
   color: variables.$accent-color;
@@ -36,6 +25,24 @@
   color: variables.$accent-color !important;
   background-color: rgba(variables.$accent-color, 0.2) !important;
 }
+
+// --------------------------------------------
+
+/** VIDEO PLAYER */
+
+// Chapter marker when watched on the seekbar
+.sliderMarker.watched ,
+// Current volume progress left side of the slider
+.mdl-slider-background-lower,
+// Watched progress left side of the slider
+.mdl-slider::-webkit-slider-thumb,
+.iconOsdProgressInner {
+  background-color: variables.$accent-color;
+}
+
+// --------------------------------------------
+
+/** INPUT */
 
 // Input component
 :is(.emby-input, .emby-textarea):focus {
@@ -108,7 +115,9 @@
   border-radius: variables.$border-radius;
 }
 
-// Settings
+// --------------------------------------------
+
+/** SETTINGS */
 
 // Sidebar menu when selected
 .navMenuOption-selected {
@@ -180,3 +189,5 @@ progress {
 :is(.innerCardFooter, .playbackProgress) .itemProgressBarForeground {
   background-color: variables.$accent-color;
 }
+
+// --------------------------------------------

@@ -185,6 +185,7 @@
   max-width: 36rem;
 }
 
+/** GENERAL UI */
 .countIndicator,
 .playedIndicator,
 .fullSyncIndicator,
@@ -196,12 +197,6 @@
   border-color: violet;
 }
 
-.mdl-slider::-webkit-slider-thumb,
-.mdl-slider-background-lower,
-.iconOsdProgressInner {
-  background-color: violet;
-}
-
 :is(.detailButton, .emby-tab-button):hover {
   color: violet;
 }
@@ -211,6 +206,15 @@
   background-color: rgba(238, 130, 238, 0.2) !important;
 }
 
+/** VIDEO PLAYER */
+.sliderMarker.watched,
+.mdl-slider-background-lower,
+.mdl-slider::-webkit-slider-thumb,
+.iconOsdProgressInner {
+  background-color: violet;
+}
+
+/** INPUT */
 :is(.emby-input, .emby-textarea):focus {
   border-color: violet;
 }
@@ -263,6 +267,7 @@
   border-radius: 0.2rem;
 }
 
+/** SETTINGS */
 .navMenuOption-selected {
   background-color: violet !important;
 }
