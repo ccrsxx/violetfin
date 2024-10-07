@@ -362,6 +362,13 @@ progress + span {
   border-radius: 0.2rem;
 }
 
+.MuiTabs-root .Mui-selected {
+  color: violet;
+}
+.MuiTabs-root .MuiTabs-indicator {
+  background-color: violet;
+}
+
 .dashboardSection > .paperList:has(#serverName) {
   display: grid;
 }

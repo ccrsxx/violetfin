@@ -6,6 +6,17 @@
   border-radius: variables.$border-radius;
 }
 
+// Playback Reporting tabs color and indicator
+.MuiTabs-root {
+  .Mui-selected {
+    color: variables.$accent-color;
+  }
+
+  .MuiTabs-indicator {
+    background-color: variables.$accent-color;
+  }
+}
+
 // Prevent server info widget to overflow too much
 .dashboardSection > .paperList:has(#serverName) {
   display: grid;
