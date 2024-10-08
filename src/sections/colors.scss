@@ -190,4 +190,15 @@ progress {
   background-color: variables.$accent-color;
 }
 
+// Playback reporting tabs color and indicator
+.MuiTabs-root {
+  .Mui-selected {
+    color: variables.$accent-color;
+  }
+
+  .MuiTabs-indicator {
+    background-color: variables.$accent-color;
+  }
+}
+
 // --------------------------------------------

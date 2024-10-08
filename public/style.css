@@ -327,6 +327,13 @@ progress + span {
   background-color: violet;
 }
 
+.MuiTabs-root .Mui-selected {
+  color: violet;
+}
+.MuiTabs-root .MuiTabs-indicator {
+  background-color: violet;
+}
+
 .trackSelections select:not(:disabled) {
   border: 0;
   padding: 0.25rem 0.5rem !important;
@@ -360,13 +367,6 @@ progress + span {
 
 .paperList {
   border-radius: 0.2rem;
-}
-
-.MuiTabs-root .Mui-selected {
-  color: violet;
-}
-.MuiTabs-root .MuiTabs-indicator {
-  background-color: violet;
 }
 
 .dashboardSection > .paperList:has(#serverName) {
