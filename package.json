@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "^19.0.0",
     "concurrently": "^8.2.2",
     "husky": "^9.0.10",
-    "lint-staged": "^15.2.1",
+    "lint-staged": "^16.0.0",
     "prettier": "^3.2.5",
     "sass": "^1.70.0",
     "serve": "^14.2.1"
